@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>Likes Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<style>
+    .shift {
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+    .new {
+        margin-top: 20px;
+        margin-left: 410px;
+    }
+    img{
+        width: 250px;
+        height: 100px;
+    }
+    h1 {
+        color: purple;
+    }
+    .post-container {
+    margin: 20px 20px 0 0;  
+    overflow: auto
+}
+.post-thumb {
+    float: left
+}
+.posting-thumb {
+    height: auto;
+}
+.post-thumb img {
+    display: block;
+    margin-left: 410px;
+}
+.post-content {
+    margin-left: 0px
+}
+
+
+</style>
+</head>
+<body>
+<div class="w3-container">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <input type="text" placeholder="Search..">
+  <a href="#" class="w3-bar-item w3-button w3-right">test@gmail.com</a>
+  <a href="#" class="w3-bar-item w3-button w3-right">Browse Events</a>
+  <a href="#" class="w3-bar-item w3-button w3-right">Host an Event</a>
+  <a href="#" class="w3-bar-item w3-button w3-right">Help</a>
+</div>
+<br>
+</div>
+<div class="container">
+<div class = "shift">
+    <h1><strong>Likes</strong></h1>
+    <br>
+</div>
+</div>
+<div class="container">
+        {% load static %}
+        <div class="post-container">                
+            <div class="post-thumb"><img src="{% static 'page/l1.jpeg' %}" /></div>
+            <div class="post-content">
+                <p>Post title <span><br>
+                    Mon, Feb 15 2021 2:30 AM IST
+                </span>
+            <span><br>
+            Starts at</span></p>
+          </div>
+        </div>
+    <div class="post-container">                
+        <div class="post-thumb"><img src="{% static 'page/l2.jpeg' %}" /></div>
+        <div class="post-content">
+            <p>Post title <span><br>
+                Mon, Feb 15 2021 2:30 AM IST
+            </span>
+        <span><br>
+        Starts at</span></p>
+      </div>
+    </div>
+    <div class="post-container">                
+        <div class="post-thumb"><img src="{% static 'page/l3.jpg' %}" /></div>
+        <div class="post-content">
+            <p>Post title <span><br>
+                Mon, Feb 15 2021 2:30 AM IST
+            </span>
+        <span><br>
+        Starts at</span></p>
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+
+</body>
+</html> 
